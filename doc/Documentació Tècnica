@@ -1,1 +1,37 @@
+1. Pràctica 2: Monitorització Ambiental d'un CPD - Alex Nicasi - Jonathan Cruz
+L’objectiu d’aquesta pràctica és crear un sistema de monitorització ambiental per a una sala de servidors (CPD). El sistema utilitza un sensor de temperatura LM35 i un sensor de llum LDR per detectar condicions anormals i generar alertes automàtiques. A més, permet consultar l’estat del sistema mitjançant comandes enviades pel Monitor Sèrie.
+2. Breu descripció de la pràctica
+En aquesta pràctica es treballa amb entrades analògiques de l’ESP32, que permeten llegir valors continus provinents de sensors. El sistema ha de:
+Llegir la lluminositat amb un LDR.
+Llegir la temperatura amb un LM35.
+Activar alertes automàtiques quan es superen llindars.
+Respondre a comandes com STATUS i LED_OFF.
+Mostrar les dades en temps real pel Monitor Sèrie.
+3. Explicació de conceptes clau
+Entrades analògiques
+A diferència de les entrades digitals (0 o 1), les entrades analògiques permeten llegir valors continus. L’ESP32 utilitza un ADC (Analog-to-Digital Converter) de 12 bits, que converteix un voltatge entre 0V i 3.3V en un valor entre 0 i 4095.
+Sensor LDR
+Un LDR és una resistència variable que disminueix el seu valor quan rep llum i l’augmenta quan hi ha foscor. Es llegeix mitjançant un divisor de tensió.
+Sensor LM35
+El LM35 genera 10 mV per cada grau centígrad. Per convertir la lectura analògica a temperatura:
+[ V = \frac{lectura}{4095} \cdot 3.3 ] [ T = V \cdot 100 ]
+4. Classes, objectes i mètodes. Relació amb Serial
+Què és una classe?
+Una classe és un model o plantilla que defineix propietats i comportaments.
+Què és un objecte?
+Un objecte és una instància d’una classe, és a dir, una còpia funcional amb la qual podem interactuar.
+Què és un mètode?
+Un mètode és una funció que pertany a una classe i defineix accions.
+Relació amb l’objecte Serial
+Serial és un objecte predefinit de la classe HardwareSerial. Conté mètodes com:
+Serial.begin() → inicialitza la comunicació.
+Serial.print() → envia text.
+Serial.readStringUntil() → llegeix dades.
+Aquesta pràctica utilitza intensament aquests mètodes per comunicar-se amb l’usuari.
+
+5. Esquema de connexions
+6. Diagrama de flux del programa
+7. proves
+
+8. Explicació detallada del seguiment del projecte dins de Github
 
