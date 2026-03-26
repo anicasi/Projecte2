@@ -21,10 +21,13 @@ El LM35 genera 10 mV per cada grau centígrad. Per convertir la lectura analògi
 4. Classes, objectes i mètodes. Relació amb Serial
 Què és una classe?
 Una classe és un model o plantilla que defineix propietats i comportaments.
+
 Què és un objecte?
 Un objecte és una instància d’una classe, és a dir, una còpia funcional amb la qual podem interactuar.
+
 Què és un mètode?
 Un mètode és una funció que pertany a una classe i defineix accions.
+
 Relació amb l’objecte Serial
 Serial és un objecte predefinit de la classe HardwareSerial. Conté mètodes com:
 Serial.begin() → inicialitza la comunicació.
@@ -34,6 +37,9 @@ Aquesta pràctica utilitza intensament aquests mètodes per comunicar-se amb l�
 
 5. Esquema de connexions
 6. Diagrama de flux del programa
+
+
+
 7. proves
 
 8. Explicació detallada del seguiment del projecte dins de Github
