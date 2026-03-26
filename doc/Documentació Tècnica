@@ -12,6 +12,7 @@ Mostrar les dades en temps real pel Monitor Sèrie.
 3. Explicació de conceptes clau
 Entrades analògiques
 A diferència de les entrades digitals (0 o 1), les entrades analògiques permeten llegir valors continus. L’ESP32 utilitza un ADC (Analog-to-Digital Converter) de 12 bits, que converteix un voltatge entre 0V i 3.3V en un valor entre 0 i 4095.
+
 Sensor LDR
 Un LDR és una resistència variable que disminueix el seu valor quan rep llum i l’augmenta quan hi ha foscor. Es llegeix mitjançant un divisor de tensió.
 Sensor LM35
